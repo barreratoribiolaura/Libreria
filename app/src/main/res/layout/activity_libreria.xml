@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fondoLibreria"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_vistaLibreria"
+    tools:context=".Activities.LibreriaActivity">
+
+
+    <TextView
+        android:id="@+id/txtLibreria"
+        style="@style/titulo_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_act_Libreria"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/recyclerViewLibreria"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewLibreria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtLibreria"
+        app:layout_constraintTop_toBottomOf="@id/txtLibreria"
+        tools:listitem="@layout/item_libro" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

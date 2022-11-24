@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    tools:context=".Activities.LoginActivity"
+    >
+
+    <ImageView
+        android:id="@+id/imgFondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondologin"
+        android:scaleType="centerCrop"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layoutinputs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/empty_tall_divider"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dimension40dp"
+            android:paddingTop="@dimen/dimension100dp"
+            android:paddingEnd="@dimen/dimension40dp">
+
+            <TextView
+                android:id="@+id/titulo"
+                style="@style/titulo_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimension20dp"
+                android:text="@string/inicioTexto"
+                android:textColor="@color/white"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilUsuario"
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimension20dp"
+                app:hintTextColor="@color/textoEdittextColor"
+                app:helperTextEnabled="false"
+                app:helperTextTextColor="@color/helperTextColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputUsuario"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hintTxtUsuario">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilContrasenya"
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimension20dp"
+                app:hintTextColor="@color/textoEdittextColor"
+                app:helperTextEnabled="false"
+                app:helperTextTextColor="@color/helperTextColor"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/mtrl_textinput_default_box_stroke_color"
+
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputContrasenya"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hintTxtContrasenya"
+                    android:inputType="textPassword"
+                    >
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/layoutRecordarme_size"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/dimension10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/recordarText_style"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="@dimen/dimension20dp"
+                    app:layout_constraintEnd_toStartOf="@id/checkbox"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="@dimen/dimension40dp"
+                    android:layout_height="@dimen/dimension40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+
+                <Button
+                    android:id="@+id/btnRegistrarse"
+                    android:layout_width="@dimen/botones_login_size"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnRegistroText"
+                    android:layout_marginEnd="@dimen/dimension20dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/borde_btn"
+                    android:backgroundTint="@color/verdeDefault"
+                    >
+                </Button>
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="@dimen/botones_login_size"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnLoginTxt"
+                    android:background="@drawable/borde_btn"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/verdeDefault"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

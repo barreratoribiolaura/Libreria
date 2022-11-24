@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="titulo_login">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30sp</item>
+        <item name="fontFamily">@font/amaranth</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="titulo_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#424242</item>
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/amaranth</item>
+    </style>
+    
+    <style name="cardView">
+        <item name="cardCornerRadius">25dp</item>
+        <item name="cardElevation">6dp</item>
+    </style>
+    <style name="item">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#48a999</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="color">#48a999</item>
+        <item name="android:textColorHint">#48a999</item>
+
+    </style>
+
+    <style name="EditTextStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="hintTextColor">#48a999</item>
+    </style>
+
+    <style name="recordarText_style">
+        <item name="android:text">@string/recordarmeText</item>
+        <item name="android:layout_width">20dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">textEnd</item>
+    </style>
+
+</resources>

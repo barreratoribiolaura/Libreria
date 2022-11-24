@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dimension10dp">10dp</dimen>
+    <dimen name="dimension20dp">20dp</dimen>
+    <dimen name="dimension40dp">40dp</dimen>
+    <dimen name="dimension100dp">100dp</dimen>
+    <dimen name="dimension200dp">200dp</dimen>
+    <dimen name="dimension250dp">250dp</dimen>
+
+    <dimen name="edittextDimension">60dp</dimen>
+    <dimen name="inputlayout_common_dimension">87dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+
+    <dimen name="tamañoRecyclerView">240dp</dimen>
+    <dimen name="layoutRecordarme_size">150dp</dimen>
+    <dimen name="botones_login_size">130dp</dimen>
+    <dimen name="item_libro_size_default">16sp</dimen>
+    <dimen name="titulo_libro_size_default">28sp</dimen>
+    <dimen name="btn_enlace_size">150dp</dimen>
+    <dimen name="margin_txtBienvenida">50dp</dimen>
+
+
+    <dimen name="size_txt_Bienvenida">20sp</dimen>
+    <dimen name="size_txt_miBiblioteca">20sp</dimen>
+    <dimen name="txtSizeMislibros">20sp</dimen>
+    <dimen name="medidas_btn_toolbar">45dp</dimen>
+    <dimen name="w_btn_borrar">30dp</dimen>
+    <dimen name="h_btn_borrar">40dp</dimen>
+    <dimen name="marginstart_btnborrar">5dp</dimen>
+    <dimen name="marginbottom_btn_borrar">15dp</dimen>
+    <dimen name="medida_checkfavorite">30dp</dimen>
+    <dimen name="medidah_checkfavorite">65dp</dimen>
+    <dimen name="marben_checkfavorite">5dp</dimen>
+    <dimen name="padding_vistaLibreria">25dp</dimen>
+
+
+</resources>
